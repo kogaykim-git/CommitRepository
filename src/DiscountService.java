@@ -1,5 +1,5 @@
 public class DiscountService {
-    int discount(int value) {
-        return -20;
+    double discount(double value) {
+        return value * 0.8;
     }
 }
