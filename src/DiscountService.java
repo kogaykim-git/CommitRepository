@@ -28,4 +28,11 @@ public class DiscountService {
     void printPerson(List<Person> personList) {
         System.out.println(personList);
     }
+
+    void printPersonId(List<Person> personList) {
+        Optional<Person> firstPerson = personList.stream()
+                .findFirst();
+        int id = firstPerson.get().getId();
+        System.out.println(id);
+    }
 }
