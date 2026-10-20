@@ -2,6 +2,7 @@ import java.util.List;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class DiscountService {
@@ -13,7 +14,15 @@ public class DiscountService {
         System.out.println(users);
     }
 
-    void input(Scanner scanner) throws FileNotFoundException {
+    void dataInput(Scanner scanner) throws FileNotFoundException {
         Scanner scanner1 = new Scanner(new File("text.txt"));
+        String name = scanner1.nextLine();
+        System.out.println(name);
+    }
+
+    void printFirstPerson(List<Person> personList) {
+        Optional<Person> firstPerson = personList.stream()
+                .findFirst();
+        System.out.println(firstPerson);
     }
 }
