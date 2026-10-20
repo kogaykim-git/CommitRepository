@@ -13,7 +13,11 @@ public class DiscountService {
         System.out.println(users);
     }
 
-    void input(Scanner scanner) throws FileNotFoundException {
+    void userInput(Scanner scanner) throws FileNotFoundException {
         Scanner scanner1 = new Scanner(new File("text.txt"));
+    }
+
+    void printPerson(List<Person> personList) {
+        System.out.println(personList);
     }
 }
