@@ -35,4 +35,11 @@ public class DiscountService {
         int id = firstPerson.get().getId();
         System.out.println(id);
     }
+
+    void printFirstNameOfPerson(List<Person> personList) {
+        Optional<Person> firstPerson = personList.stream()
+                .findFirst();
+        String name = firstPerson.get().getName();
+        System.out.println(name);
+    }
 }
