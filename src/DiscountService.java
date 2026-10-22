@@ -42,4 +42,12 @@ public class DiscountService {
         String name = firstPerson.get().getName();
         System.out.println(name);
     }
+
+    void printSomeOfPerson(List<Person> personList) {
+        Optional<Person> findPerson = personList.stream()
+                .filter(e -> e.getName().equals("John"))
+                .findFirst();
+        System.out.println(findPerson);
+
+    }
 }
