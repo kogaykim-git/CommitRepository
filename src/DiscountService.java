@@ -43,6 +43,10 @@ public class DiscountService {
         System.out.println(name);
     }
 
+    /**
+     * some new feat #5
+     * @param personList
+     */
     void printSomeOfPerson(List<Person> personList) {
         Optional<Person> findPerson = personList.stream()
                 .filter(e -> e.getName().equals("John"))
@@ -51,6 +55,10 @@ public class DiscountService {
 
     }
 
+    /**
+     * some new feat #6
+     * @param personList
+     */
     void printSomeNewOfPerson(List<Person> personList) {
         Optional<Person> viktorPerson = personList.stream()
                 .filter(e -> e.getName().equals("Viktor Ogay"))
