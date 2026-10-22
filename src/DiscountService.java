@@ -53,7 +53,7 @@ public class DiscountService {
 
     void printSomeNewOfPerson(List<Person> personList) {
         Optional<Person> viktorPerson = personList.stream()
-                .filter(e -> e.getName().equals("Viktor"))
+                .filter(e -> e.getName().equals("Viktor Ogay"))
                 .findFirst();
         System.out.println(viktorPerson);
     }
