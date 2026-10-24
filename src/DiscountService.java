@@ -65,6 +65,12 @@ public class DiscountService {
                 .findFirst();
         System.out.println(viktorPerson);
     }
+
+    /**
+     * Метод для поиска персона из листа персонов в аргументе
+     * @param personList
+     * @return Person
+     */
     Person findPerson(List<Person> personList) {
       Person findPerson = personList.stream()
               .filter(e->e.getName().equals("Viktor"))
