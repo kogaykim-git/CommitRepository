@@ -65,4 +65,12 @@ public class DiscountService {
                 .findFirst();
         System.out.println(viktorPerson);
     }
+    void findPerson(List<Person> personList) {
+        for (Person person : personList) {
+            if (person.getName().equals("Viktor")) {
+                System.out.println(person.getName());
+                break;
+            }
+        }
+    }
 }
